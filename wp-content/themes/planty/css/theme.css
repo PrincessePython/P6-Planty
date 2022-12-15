@@ -1,0 +1,87 @@
+
+/* Import de la font  depuis Google Fonts et on l'applique sur tous les éléments de la page */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+
+body * {
+   font-family: 'Syne', sans-serif;
+}
+
+/* On applique une couleur sur les titres */
+h1{
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+/* On applique une couleur sur les paragraphes */
+p {
+   color: black;
+}
+/* La classe 'hover-effect' permettra de créer un effet de zoom quand l'on passera la souris par dessus les elements images enfants  */
+/* .hover-effect img {
+   transition: all 0.33s ease-in-out;
+   transform: scale(1) translateY(0px);
+}
+.hover-effect img:hover {
+   transition: all 0.33s ease-in-out;
+   transform: scale(1.05) translateY(-10px);
+} */
+
+/* NAV BAR & LOGO  */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#site-title span {
+    display: none;
+}
+
+#site-title a {
+    display: block;
+    width: 200px;
+    height: 105px;
+    text-align: left;
+    background: url("http://localhost/OpenClassrooms/projet-6-planty/planty/wp-content/uploads/2022/12/Logo-source-e1670934909611.png");
+    background-repeat: no-repeat;
+}
+
+#search{
+    display:none;
+}
+/* .entry-meta{
+    display: none;
+} */
+.menu ul a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+li {
+    display: inline-block;
+    padding-right: 30px;
+}
+.menu ul{
+    margin-right: 50px;
+}
+
+/* REMOVING ALL THEME HTML FROM THE PAGE */
+.header h2.entry-title , .post-edit-link, .entry-meta{
+    display: none;
+}
+.entry-summary{
+    display: none;
+}
+.xoxo{
+    display: none;
+}
+
+/* FOOTER */
+#footer #copyright{
+    display: none;
+}
+#footer{
+    
+}
